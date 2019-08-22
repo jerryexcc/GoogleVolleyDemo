@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //init
+        //init Volley
         requestQueue = Volley.newRequestQueue(MainActivity.this);
         StringRequest request = new StringRequest(Request.Method.GET, "https://www.google.com.tw", new Response.Listener<String>() {
             @Override
